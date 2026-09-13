@@ -1,0 +1,49 @@
+text,category
+Corporate VPN disconnects every few minutes,NETWORK
+Cannot connect to the office wireless network,NETWORK
+Internal website is unreachable from my laptop,NETWORK
+Ethernet connection has no internet access,NETWORK
+Remote desktop drops because the connection times out,NETWORK
+Network drive cannot be reached from the branch office,NETWORK
+Video calls freeze on the company network,NETWORK
+DNS error appears when opening internal systems,NETWORK
+Laptop screen stays black after power on,HARDWARE
+Keyboard keys do not respond,HARDWARE
+Desktop computer makes a loud fan noise,HARDWARE
+External monitor is not detected,HARDWARE
+Printer will not power on,HARDWARE
+Laptop battery no longer charges,HARDWARE
+Mouse disconnects from the USB port,HARDWARE
+Docking station does not recognize displays,HARDWARE
+Spreadsheet application crashes when opening files,SOFTWARE
+Accounting program fails during startup,SOFTWARE
+Browser update will not install,SOFTWARE
+PDF reader closes immediately after launch,SOFTWARE
+Desktop application shows an unexpected error,SOFTWARE
+Operating system update repeatedly fails,SOFTWARE
+Project management client is running very slowly,SOFTWARE
+Required application is missing from my computer,SOFTWARE
+Password reset link has expired,ACCESS
+Account is locked after failed login attempts,ACCESS
+Permission denied when opening the finance folder,ACCESS
+Cannot sign in to the employee portal,ACCESS
+New starter needs access to the reporting system,ACCESS
+Multi factor authentication code is rejected,ACCESS
+My role does not allow access to the dashboard,ACCESS
+Single sign on redirects back to the login page,ACCESS
+Outgoing email remains in the outbox,EMAIL
+Messages from a customer are not arriving,EMAIL
+Shared mailbox is missing in the mail client,EMAIL
+Email attachments cannot be downloaded,EMAIL
+Calendar invitations are not being delivered,EMAIL
+Mail client keeps asking for my password,EMAIL
+Automatic reply is not turning on,EMAIL
+Email search returns no recent messages,EMAIL
+Need help changing the default browser,OTHER
+Desk phone extension needs to be updated,OTHER
+How do I request approved software,OTHER
+Please update my office location in the directory,OTHER
+I need guidance for the meeting room controls,OTHER
+The onboarding checklist has an incorrect date,OTHER
+Where can I find the remote work policy,OTHER
+Please explain how to use the new time sheet,OTHER

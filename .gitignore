@@ -1,0 +1,16 @@
+**/target/
+**/node_modules/
+**/.next/
+**/*.tsbuildinfo
+**/.venv/
+**/__pycache__/
+**/.pytest_cache/
+**/*.joblib
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+*.iml
+*.log
+.DS_Store

@@ -1,0 +1,14 @@
+package com.opsdesk.activity;
+
+public enum ActivityAction {
+    INCIDENT_CREATED,
+    ASSIGNED,
+    STATUS_CHANGED,
+    PRIORITY_CALCULATED,
+    AI_CATEGORY_SUGGESTED,
+    COMMENT_ADDED,
+    SLA_BREACHED,
+    INCIDENT_RESOLVED,
+    INCIDENT_CLOSED,
+    INCIDENT_REOPENED
+}
