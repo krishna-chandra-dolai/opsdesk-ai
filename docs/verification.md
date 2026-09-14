@@ -83,3 +83,17 @@ At that gate, Phases 3–10 were not implemented and incident workflow was next.
 - Google Chrome could not be opened through Codex because the browser connector returned `Browser is not available: chrome` and listed only the Codex in-app browser. Chrome rendering is not claimed. The local URLs are ready once Chrome is connected to Codex.
 
 Remaining: Phase 10 (containers, CI, delivery documentation and deployment). DEPLOYMENT PENDING.
+
+## Delivery verification — 2026-09-14
+
+- Public source repository: https://github.com/krishna-chandra-dolai/opsdesk-ai.
+- GitHub Actions run 34765693575 passed all three jobs on 2026-09-13: Java 24 tests, zero failures/errors/skips; Python 2 tests; frontend typecheck, lint and production build. All three Docker images built successfully on Linux.
+- Fixed a support authorization gap: an engineer cannot take another engineer's assignment. An integration regression test verifies rejection and unchanged assignment/history.
+- Fixed login with an expired stored JWT by omitting Bearer headers from public authentication requests. Removed prefilled credentials from the login source.
+- Browser workflow verified across 2026-09-10 to 2026-09-14: employee creates ticket #6, engineer claims, starts work, comments and resolves; employee reopens; engineer claims, resumes and resolves; employee closes. Admin dashboard displays current database counts.
+- Ticket #6 remained persisted across service and PC restarts. Its elapsed SLA produced exactly one SLA_BREACHED activity. CLOSED to IN_PROGRESS returned 400.
+- Live role logins and 401/403/404 responses passed on 2026-09-13. Backend health, AI health and frontend login returned 200 on 2026-09-14. Earlier online/offline AI checks are recorded above.
+- Real queue, incident detail and login screenshots are included in docs/screenshots. Browser interaction used the in-app Chromium browser; Chrome was not connected during final verification.
+- A fresh frontend install/build outside the OneDrive directory succeeded after dependency reads stalled in the synced directory. npm audit reported zero vulnerabilities. ESLint reported a maintenance-support warning; lint passed. Python emitted two dependency deprecation warnings; tests passed.
+
+**DEPLOYMENT PENDING.** Source publication and successful CI do not make the application publicly hosted. Hosting account access and production configuration remain required; deployed end-to-end verification has not occurred.

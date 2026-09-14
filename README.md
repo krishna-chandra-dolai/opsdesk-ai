@@ -1,5 +1,7 @@
 # OpsDesk AI
 
+[![Build and test](https://github.com/krishna-chandra-dolai/opsdesk-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/krishna-chandra-dolai/opsdesk-ai/actions/workflows/ci.yml)
+
 An IT service desk platform with Java business rules and a separate Python category classifier. OpsDesk replaces fragmented incident reports with an auditable employee-to-engineer workflow.
 
 **Current status: backend, classifier and Next.js MVP complete. DEPLOYMENT PENDING.**
@@ -10,7 +12,7 @@ Implemented: authentication, role authorization, incident workflow, comments, ac
 
 Screenshots show the actual local application with demonstration data. See the [screenshot gallery](docs/screenshots/README.md).
 
-![OpsDesk login](docs/screenshots/login.png)
+![OpsDesk engineer queue](docs/screenshots/engineer-queue.png)
 
 ## Stack and structure
 

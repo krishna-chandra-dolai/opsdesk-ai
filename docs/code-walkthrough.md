@@ -61,3 +61,8 @@ Employee: `/incidents` → paged API → `/incidents/new` → create → `/incid
 `OpenApiConfig` describes the API and registers the JWT Bearer scheme → springdoc inspects controllers and DTOs → `/v3/api-docs` returns the contract → Swagger UI renders it and sends an entered token as `Authorization: Bearer ...`. `AuthController` removes the global security requirement from public register/login operations.
 
 Controller exception → `GlobalExceptionHandler` → matching explicit handler → `ApiError`. Validation and malformed input become 400, access denial becomes 403, missing resources become 404, and an unexpected exception is logged with details only on the server before the client receives a generic 500. Authentication failures that occur before a controller use the same `ApiError` shape from `SecurityConfig`.
+
+## Delivery checks
+
+The GitHub Actions workflow runs the backend against a separate PostgreSQL database, trains/tests the classifier, checks/builds the frontend, and builds all three Docker images. Follow docs/verification.md for actual results. Hosting remains pending.
+
