@@ -65,4 +65,3 @@ Controller exception → `GlobalExceptionHandler` → matching explicit handler 
 ## Delivery checks
 
 The GitHub Actions workflow runs the backend against a separate PostgreSQL database, trains/tests the classifier, checks/builds the frontend, and builds all three Docker images. Follow docs/verification.md for actual results. Hosting remains pending.
-
